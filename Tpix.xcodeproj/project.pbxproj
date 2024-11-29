@@ -6,14 +6,67 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3C5A0BB42CF94B790090EFBB /* TPixKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3C5A0BAD2CF94B790090EFBB /* TPixKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3C5A0BBC2CF94CC90090EFBB /* ClipStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A0BBA2CF94CC90090EFBB /* ClipStorage.xcdatamodeld */; };
+		3C5A0BBD2CF94CC90090EFBB /* ClipStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A0BBA2CF94CC90090EFBB /* ClipStorage.xcdatamodeld */; };
+		3C5A0BD62CF94D550090EFBB /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A0BD52CF94D550090EFBB /* PersistenceController.swift */; };
+		3C5A0BD72CF94D550090EFBB /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A0BD52CF94D550090EFBB /* PersistenceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C5A0BB22CF94B790090EFBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C5A0B902CF92D710090EFBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C5A0BAC2CF94B790090EFBB;
+			remoteInfo = TPixKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C5A0BB92CF94B790090EFBB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3C5A0BB42CF94B790090EFBB /* TPixKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3C5A0B982CF92D710090EFBB /* Tpix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tpix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5A0BAD2CF94B790090EFBB /* TPixKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TPixKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5A0BBB2CF94CC90090EFBB /* ClipStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClipStorage.xcdatamodel; sourceTree = "<group>"; };
+		3C5A0BD52CF94D550090EFBB /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3C5A0BB52CF94B790090EFBB /* Exceptions for "TPixKeyboard" folder in "TPixKeyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3C5A0BAC2CF94B790090EFBB /* TPixKeyboard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3C5A0B9A2CF92D710090EFBB /* Tpix */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Tpix;
+			sourceTree = "<group>";
+		};
+		3C5A0BAE2CF94B790090EFBB /* TPixKeyboard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3C5A0BB52CF94B790090EFBB /* Exceptions for "TPixKeyboard" folder in "TPixKeyboard" target */,
+			);
+			path = TPixKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +79,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C5A0BAA2CF94B790090EFBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3C5A0B8F2CF92D710090EFBB = {
 			isa = PBXGroup;
 			children = (
+				3C5A0BD52CF94D550090EFBB /* PersistenceController.swift */,
+				3C5A0BBA2CF94CC90090EFBB /* ClipStorage.xcdatamodeld */,
 				3C5A0B9A2CF92D710090EFBB /* Tpix */,
+				3C5A0BAE2CF94B790090EFBB /* TPixKeyboard */,
 				3C5A0B992CF92D710090EFBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				3C5A0B982CF92D710090EFBB /* Tpix.app */,
+				3C5A0BAD2CF94B790090EFBB /* TPixKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +119,12 @@
 				3C5A0B942CF92D710090EFBB /* Sources */,
 				3C5A0B952CF92D710090EFBB /* Frameworks */,
 				3C5A0B962CF92D710090EFBB /* Resources */,
+				3C5A0BB92CF94B790090EFBB /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3C5A0BB32CF94B790090EFBB /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				3C5A0B9A2CF92D710090EFBB /* Tpix */,
@@ -69,6 +135,28 @@
 			productName = Tpix;
 			productReference = 3C5A0B982CF92D710090EFBB /* Tpix.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3C5A0BAC2CF94B790090EFBB /* TPixKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C5A0BB62CF94B790090EFBB /* Build configuration list for PBXNativeTarget "TPixKeyboard" */;
+			buildPhases = (
+				3C5A0BA92CF94B790090EFBB /* Sources */,
+				3C5A0BAA2CF94B790090EFBB /* Frameworks */,
+				3C5A0BAB2CF94B790090EFBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3C5A0BAE2CF94B790090EFBB /* TPixKeyboard */,
+			);
+			name = TPixKeyboard;
+			packageProductDependencies = (
+			);
+			productName = TPixKeyboard;
+			productReference = 3C5A0BAD2CF94B790090EFBB /* TPixKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +169,9 @@
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					3C5A0B972CF92D710090EFBB = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					3C5A0BAC2CF94B790090EFBB = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
@@ -100,12 +191,20 @@
 			projectRoot = "";
 			targets = (
 				3C5A0B972CF92D710090EFBB /* Tpix */,
+				3C5A0BAC2CF94B790090EFBB /* TPixKeyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3C5A0B962CF92D710090EFBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C5A0BAB2CF94B790090EFBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,10 +218,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5A0BBD2CF94CC90090EFBB /* ClipStorage.xcdatamodeld in Sources */,
+				3C5A0BD62CF94D550090EFBB /* PersistenceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C5A0BA92CF94B790090EFBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5A0BD72CF94D550090EFBB /* PersistenceController.swift in Sources */,
+				3C5A0BBC2CF94CC90090EFBB /* ClipStorage.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C5A0BB32CF94B790090EFBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C5A0BAC2CF94B790090EFBB /* TPixKeyboard */;
+			targetProxy = 3C5A0BB22CF94B790090EFBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3C5A0BA42CF92D720090EFBB /* Debug */ = {
@@ -249,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tpix/Tpix.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tpix/Preview Content\"";
@@ -265,7 +384,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.king.Tpix;
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.TpixApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -278,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tpix/Tpix.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tpix/Preview Content\"";
@@ -294,8 +414,60 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.king.Tpix;
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.TpixApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C5A0BB72CF94B790090EFBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TPixKeyboard/TPixKeyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8Q95J3VGG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TPixKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TPixKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.TpixApp.TPixKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C5A0BB82CF94B790090EFBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TPixKeyboard/TPixKeyboard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8Q95J3VGG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TPixKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TPixKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.king.TpixApp.TPixKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,7 +495,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3C5A0BB62CF94B790090EFBB /* Build configuration list for PBXNativeTarget "TPixKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C5A0BB72CF94B790090EFBB /* Debug */,
+				3C5A0BB82CF94B790090EFBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3C5A0BBA2CF94CC90090EFBB /* ClipStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C5A0BBB2CF94CC90090EFBB /* ClipStorage.xcdatamodel */,
+			);
+			currentVersion = 3C5A0BBB2CF94CC90090EFBB /* ClipStorage.xcdatamodel */;
+			path = ClipStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3C5A0B902CF92D710090EFBB /* Project object */;
 }
