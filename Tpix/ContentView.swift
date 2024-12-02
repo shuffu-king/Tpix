@@ -13,7 +13,8 @@ struct ContentView: View {
     @EnvironmentObject var clipboardManager: ClipboardManager
     @State private var showToast = false   // State for the toast notification
     @State private var toastMessage = ""   // Message to show in the toast
-    
+    @State private var showingInstructions = false // Tracks the display state of the instructions modal
+
     let columns = [
         GridItem(.adaptive(minimum: 100))  // Adjust the minimum size as needed
     ]
@@ -96,6 +97,18 @@ struct ContentView: View {
                     }
                     .accessibilityLabel("Refresh Images")
                 }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        showingInstructions.toggle()
+                    }) {
+                        Image(systemName: "questionmark.circle")
+                            .accessibilityLabel("Instructions")
+                    }
+                }
+            }
+            .sheet(isPresented: $showingInstructions) {
+                InstructionsView()
             }
         }
     }
